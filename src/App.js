@@ -71,6 +71,7 @@ const App = () => {
         renderItem={({ item }) => (
           <View style={styles.resultItem}>
             <Text style={styles.resultTitle}>{item.t}</Text>
+              <Text style={styles.resultExcerpt}>{item.p}</Text>
             <Text style={styles.resultDescription}>{item.d}</Text>
             <Text style={styles.resultURL}>{item.u}</Text>
           </View>
@@ -116,6 +117,10 @@ const styles = StyleSheet.create({
   resultTitle: {
     fontSize: 18,
     fontWeight: 'bold',
+  },
+  resultExcerpt: {
+    fontSize: 14,
+    color: '#777',
   },
   resultDescription: {
     fontSize: 14,
